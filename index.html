@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK/8 Clone</title>
+    <script src="https://kit.fontawesome.com/bd38170f6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran&family=IBM+Plex+Serif:ital,wght@1,200&family=PT+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="site-wrapper">
+
+        <div class="nav-container">
+            <nav class="nav-flex-parent">
+                <div class="nav-flex-child">
+                    <a href="#">
+                        <svg width="65" height="17" viewBox="0 0 198.27 48.78" style="color: white; fill:currentColor">
+                            <path
+                                d="M181.39 48.78c-5.34 0-9.54-1.14-12.52-3.51a11.92 11.92 0 0 1-4.5-9.85 9.15 9.15 0 0 1 .92-4.27 11.26 11.26 0 0 1 2.59-3.59 11.42 11.42 0 0 1 3.66-2.29 14.08 14.08 0 0 1 3.67-.76 1.22 1.22 0 0 0 1.07-1.15 1.11 1.11 0 0 0-1.07-1.14 13.9 13.9 0 0 1-3.13-.69 13.05 13.05 0 0 1-3.21-1.76 11.18 11.18 0 0 1-2.29-3.28 10.22 10.22 0 0 1-.91-4.43 10.37 10.37 0 0 1 4.2-8.85Q174.1 0 181.32 0c4.73 0 8.55 1.07 11.37 3.21a10.43 10.43 0 0 1 4.31 8.85 10.68 10.68 0 0 1-.92 4.43 10.12 10.12 0 0 1-2.37 3.28c-.91.92-2.06 1.15-3.28 1.76a12.31 12.31 0 0 1-3.05.69 1.23 1.23 0 0 0-1.07 1.22 1.11 1.11 0 0 0 1.07 1.14 14.43 14.43 0 0 1 3.66.77 11.19 11.19 0 0 1 3.67 2.29 10.25 10.25 0 0 1 2.59 3.58 8.44 8.44 0 0 1 1 4.28 11.91 11.91 0 0 1-4.51 9.85c-2.85 2.29-7.05 3.43-12.4 3.43Zm0-3.81c3.06 0 5.2-.84 6.57-2.6a10.54 10.54 0 0 0 2.04-6.72v-1.37a9.21 9.21 0 0 0-2-6.19c-1.3-1.75-3.51-2.67-6.57-2.67a10.55 10.55 0 0 0-4 .69 6.38 6.38 0 0 0-2.67 2 6.7 6.7 0 0 0-1.52 2.45 14.09 14.09 0 0 0-.46 3.74v1.45a14.19 14.19 0 0 0 .46 3.74 7.87 7.87 0 0 0 1.52 3 6.39 6.39 0 0 0 2.67 1.91 12.49 12.49 0 0 0 3.96.6Zm0-23.52a8.15 8.15 0 0 0 3.52-.68 6.45 6.45 0 0 0 2.21-1.77 6.59 6.59 0 0 0 1.22-2.67 15.43 15.43 0 0 0 .31-3.29v-1a15.4 15.4 0 0 0-.31-3.28 6.14 6.14 0 0 0-1.22-2.67 5.7 5.7 0 0 0-2.21-1.83 9.3 9.3 0 0 0-7 0 6 6 0 0 0-2.29 1.83 6.6 6.6 0 0 0-1.14 2.67 15.4 15.4 0 0 0-.31 3.28v1a15 15 0 0 0 .31 3.29 7.74 7.74 0 0 0 1.11 2.67 7.68 7.68 0 0 0 2.29 1.76 8.13 8.13 0 0 0 3.51.69Zm0 27.33c-5.34 0-9.54-1.14-12.52-3.51a11.92 11.92 0 0 1-4.5-9.85 9.15 9.15 0 0 1 .92-4.27 11.26 11.26 0 0 1 2.59-3.59 11.42 11.42 0 0 1 3.66-2.29 14.08 14.08 0 0 1 3.67-.76 1.22 1.22 0 0 0 1.07-1.15 1.11 1.11 0 0 0-1.07-1.14 13.9 13.9 0 0 1-3.13-.69 13.05 13.05 0 0 1-3.21-1.76 11.18 11.18 0 0 1-2.29-3.28 10.22 10.22 0 0 1-.91-4.43 10.37 10.37 0 0 1 4.2-8.85Q174.1 0 181.32 0c4.73 0 8.55 1.07 11.37 3.21a10.43 10.43 0 0 1 4.31 8.85 10.68 10.68 0 0 1-.92 4.43 10.12 10.12 0 0 1-2.37 3.28c-.91.92-2.06 1.15-3.28 1.76a12.31 12.31 0 0 1-3.05.69 1.23 1.23 0 0 0-1.07 1.22 1.11 1.11 0 0 0 1.07 1.14 14.43 14.43 0 0 1 3.66.77 11.19 11.19 0 0 1 3.67 2.29 10.25 10.25 0 0 1 2.59 3.58 8.44 8.44 0 0 1 1 4.28 11.91 11.91 0 0 1-4.51 9.85c-2.85 2.29-7.05 3.43-12.4 3.43Zm0-3.81c3.06 0 5.2-.84 6.57-2.6a10.54 10.54 0 0 0 2.04-6.72v-1.37a9.21 9.21 0 0 0-2-6.19c-1.3-1.75-3.51-2.67-6.57-2.67a10.55 10.55 0 0 0-4 .69 6.38 6.38 0 0 0-2.67 2 6.7 6.7 0 0 0-1.52 2.45 14.09 14.09 0 0 0-.46 3.74v1.45a14.19 14.19 0 0 0 .46 3.74 7.87 7.87 0 0 0 1.52 3 6.39 6.39 0 0 0 2.67 1.91 12.49 12.49 0 0 0 3.96.6Zm0-23.52a8.15 8.15 0 0 0 3.52-.68 6.45 6.45 0 0 0 2.21-1.77 6.59 6.59 0 0 0 1.22-2.67 15.43 15.43 0 0 0 .31-3.29v-1a15.4 15.4 0 0 0-.31-3.28 6.14 6.14 0 0 0-1.22-2.67 5.7 5.7 0 0 0-2.21-1.83 9.3 9.3 0 0 0-7 0 6 6 0 0 0-2.29 1.83 6.6 6.6 0 0 0-1.14 2.67 15.4 15.4 0 0 0-.31 3.28v1a15 15 0 0 0 .31 3.29 7.74 7.74 0 0 0 1.11 2.67 7.68 7.68 0 0 0 2.29 1.76 8.13 8.13 0 0 0 3.51.69ZM127.11.31h-8.24L97.42 27a1.92 1.92 0 0 1-3.29-1.84l3.29-9.69V.31h-6.88v48h6.88v-12.5l6.94-8.33 13.9 20.85h8.47l-17.63-26Zm0 0h-8.24L97.42 27a1.92 1.92 0 0 1-3.29-1.84l3.29-9.69V.31h-6.88v48h6.88v-12.5l6.94-8.33 13.9 20.85h8.47l-17.63-26ZM67 30.54a1.92 1.92 0 0 1 .56-3.54c.16 0 .31-.08.46-.08 6.11-.31 11.61-2.67 13.9-6.72a12.26 12.26 0 0 0 1.6-6.56 13.76 13.76 0 0 0-1.76-7.26C79.4 2.21 74.51.31 67.64.31H51.15V48.4H58V27h3l13.66 21.4h8.71l-8.78-13.21Zm1.48-23.67c3.28 0 5.8 1 7.1 3.28a7.41 7.41 0 0 1 .84 3.67 7.46 7.46 0 0 1-1 3.82c-1.22 2.13-3.67 3.13-7 3.13H58V6.87ZM67 30.54a1.92 1.92 0 0 1 .56-3.54c.16 0 .31-.08.46-.08 6.11-.31 11.61-2.67 13.9-6.72a12.26 12.26 0 0 0 1.6-6.56 13.76 13.76 0 0 0-1.76-7.26C79.4 2.21 74.51.31 67.64.31H51.15V48.4H58V27h3l13.66 21.4h8.71l-8.78-13.21Zm1.48-23.67c3.28 0 5.8 1 7.1 3.28a7.41 7.41 0 0 1 .84 3.67 7.46 7.46 0 0 1-1 3.82c-1.22 2.13-3.67 3.13-7 3.13H58V6.87ZM37 48.4h7.25L27.33.31H17L0 48.4h7.25L13 31.61h18.3ZM15.19 25 19 13.89c.15-.53.61-1.67.61-1.67s-.3-3.14-.61-4.59l-.37-2.13a2 2 0 0 1 1.45-2.22 1.84 1.84 0 0 1 2.21 1.22l.08.16L29.09 25ZM37 48.4h7.25L27.33.31H17L0 48.4h7.25L13 31.61h18.3ZM15.19 25 19 13.89c.15-.53.61-1.67.61-1.67s-.3-3.14-.61-4.59l-.37-2.13a2 2 0 0 1 1.45-2.22 1.84 1.84 0 0 1 2.21 1.22l.08.16L29.09 25Zm116.2 23.4h7.25L164.14.31h-7.25Zm0 0h7.25L164.14.31h-7.25Z">
+                            </path>
+                        </svg>
+                        <!-- <span>ark/8</span> -->
+                    </a>
+                </div>
+                <div class="nav-flex-child">
+                    <ul class="list-flex-parent">
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span>SHOP</span>
+                                </button>
+                            </div>
+                            <svg viewBox="0 0 10.21 24" class="list-item-flex-child svg-button-tail"
+                                preserveAspectRatio="none" style="color: white; fill:currentColor">
+                                <path
+                                    d="M10.21 4V0a4.09 4.09 0 0 1-4 4H4a4.09 4.09 0 0 1-4-4v24a4.09 4.09 0 0 1 4-4h2.21a4.09 4.09 0 0 1 4 4V4Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span>COLLECTIONS</span>
+                                </button>
+                            </div>
+                            <svg viewBox="0 0 10.21 24" class="list-item-flex-child svg-button-tail"
+                                preserveAspectRatio="none" style="color: white; fill:currentColor">
+                                <path
+                                    d="M10.21 4V0a4.09 4.09 0 0 1-4 4H4a4.09 4.09 0 0 1-4-4v24a4.09 4.09 0 0 1 4-4h2.21a4.09 4.09 0 0 1 4 4V4Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span>EXPLORE</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-flex-child">
+                    <ul class="list-flex-parent">
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                </button>
+                            </div>
+                            <svg viewBox="0 0 10.21 24" class="list-item-flex-child svg-button-tail"
+                                preserveAspectRatio="none" style="color: white; fill:currentColor">
+                                <path
+                                    d="M10.21 4V0a4.09 4.09 0 0 1-4 4H4a4.09 4.09 0 0 1-4-4v24a4.09 4.09 0 0 1 4-4h2.21a4.09 4.09 0 0 1 4 4V4Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span>LOG IN</span>
+                                </button>
+                            </div>
+                            <svg viewBox="0 0 10.21 24" class="list-item-flex-child svg-button-tail"
+                                preserveAspectRatio="none" style="color: white; fill:currentColor">
+                                <path
+                                    d="M10.21 4V0a4.09 4.09 0 0 1-4 4H4a4.09 4.09 0 0 1-4-4v24a4.09 4.09 0 0 1 4-4h2.21a4.09 4.09 0 0 1 4 4V4Z">
+                                </path>
+                            </svg>
+                        </li>
+
+                        <li class="list-flex-child list-item-flex-parent">
+                            <div class="list-item-flex-child">
+                                <button class="nav-list-button">
+                                    <span>BAG/0</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section class="section hero-container">
+            <div class="hero-image hero-flex-parent">
+                <div class="hero-flex-child">
+                    <a href="#" class="hero-heading">
+                        <h1 class="hero-text">
+                            <p>AW23/</p>
+                            <p>DELVING INTO</p>
+                            <p>THE LANDS BETWEEN</p>
+                        </h1>
+                    </a>
+                    <a href="#" class="hero-heading">
+                        <h2>see collection</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <main class="main-container">
+            <section class=" section new-arrivals">
+                <div class="new-arrivals-container-flex-parent">
+                    <div id="new-arrivals-heading"
+                        class="new-arrivals-container-flex-child new-arrivals-heading-flex-parent">
+                        <h3 class="new-arrivals-heading-flex-child">new arrivals</h3>
+                        <a href="#" class="new-arrivals-heading-flex-child">discover</a>
+                    </div>
+                    <div id="new-arrivals-items"
+                        class="new-arrivals-container-flex-child new-arrivals-items-flex-parent">
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">
+                            <div class="na-item-flex-parent">
+                                <div class="na-item-flex-child">
+                                    <img src="./grey-sweatshirt.jpeg" alt="grey sweatshirt" class="na-item-image">
+                                </div>
+                                <div class="na-item-flex-child">
+                                    <p class="na-item-text">tarnished destroyed sweater</p>
+                                    <p class="na-item-text">$235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- copied 1st item 3 times -->
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">
+                            <div class="na-item-flex-parent">
+                                <div class="na-item-flex-child">
+                                    <img src="./grey-sweatshirt.jpeg" alt="grey sweatshirt" class="na-item-image">
+                                </div>
+                                <div class="na-item-flex-child">
+                                    <p class="na-item-text">tarnished destroyed sweater</p>
+                                    <p class="na-item-text">$235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">
+                            <div class="na-item-flex-parent">
+                                <div class="na-item-flex-child">
+                                    <img src="./grey-sweatshirt.jpeg" alt="grey sweatshirt" class="na-item-image">
+                                </div>
+                                <div class="na-item-flex-child">
+                                    <p class="na-item-text">tarnished destroyed sweater</p>
+                                    <p class="na-item-text">$235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">
+                            <div class="na-item-flex-parent">
+                                <div class="na-item-flex-child">
+                                    <img src="./grey-sweatshirt.jpeg" alt="grey sweatshirt" class="na-item-image">
+                                </div>
+                                <div class="na-item-flex-child">
+                                    <p class="na-item-text">tarnished destroyed sweater</p>
+                                    <p class="na-item-text">$235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of copied items -->
+
+                        <!-- <div class="new-arrivals-item new-arrivals-items-flex-child">new item</div>
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">new item</div>
+                        <div class="new-arrivals-item new-arrivals-items-flex-child">new item</div> -->
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer-container"></footer>
+
+    </div>
+</body>
+
+
+
+</html>

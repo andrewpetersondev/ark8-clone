@@ -1,0 +1,244 @@
+/* global styles */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-black: #000000;
+  --color-richBlack: #020302;
+  --color-white: #ffffff;
+  --color-lightGrey: #e9e6e1;
+  --color-lightGrey2: #d4cfc4;
+  --color-mediumGrey: #9d9688;
+  --color-mediumGrey2: #6d675a;
+  --color-darkGrey: #38352e;
+  --color-phosphor: #ffb000;
+  --color-darkPhosphor: #e59e00;
+  --color-highlightSearch: #eba200;
+  --color-gridLine: #ffbdb9;
+  --color-error: #cc4700;
+  --color-transparent: transparent;
+  --color-brown: #553b37;
+  --color-beige: #d8d4cd;
+  --color-blue: #0350ab;
+  --color-grey: #959595;
+  --color-green: #5cb84d;
+  --color-orange: #ffb000;
+  --color-pink: #ff00ff;
+  --color-purple: #7700ff;
+  --color-red: #ff0000;
+  --color-yellow: #ffd900;
+}
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+
+/* end of global styles */
+
+/* site wrapper */
+
+/* end of site wrapper */
+
+/* header */
+
+/* nav */
+
+.nav-container {
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.nav-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid black; */
+}
+
+.nav-flex-child {
+  align-self: center;
+  /* border: 2px solid red; */
+}
+
+.list-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-flex-child {
+  align-self: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-item-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  position: relative;
+}
+
+.list-item-flex-child {
+  align-self: center;
+}
+
+.svg-button-tail {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  display: block;
+  width: 10px;
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.nav-list-button {
+  line-height: 1;
+  gap: 0px 0.3125rem;
+  padding: 0.6875rem 1rem 0.59375rem;
+  font-size: calc(7.7px + 0.229167vw);
+  letter-spacing: 0.02em;
+}
+
+/* end of nav */
+/* end of header */
+
+/* main */
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+.hero-image {
+  background-image: url("./hero.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-flex-parent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.hero-flex-child {
+  /* color: white; */
+  align-self: center;
+}
+
+.hero-heading {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-heading h1 {
+  font-size: 4rem;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.hero-heading h2 {
+  padding: 50px 0;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+
+/* new arrivals section */
+.new-arrivals {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.new-arrivals-container-flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* gap: 10px; */
+  /* text-align: start; */
+}
+
+.new-arrivals-heading-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-arrivals-heading-flex-child {
+  align-self: center;
+}
+
+.new-arrivals-items-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+
+.new-arrivals-items-flex-child {
+  flex: 1 1 200px;
+  align-self: center;
+  background-color: #38352e;
+}
+.na-item-flex-parent {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 1.5rem; */
+  /* height: 100%; */
+}
+
+.na-item-flex-child {
+  align-self: center;
+  background-color: red;
+}
+
+.na-item-image {
+  width: 250px;
+}
+/* end of new arrivals section */
+
+/* end of main */
