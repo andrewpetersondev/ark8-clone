@@ -65,12 +65,10 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  /* border: 2px solid black; */
 }
 
 .nav-flex-child {
   align-self: center;
-  /* border: 2px solid red; */
 }
 
 .list-flex-parent {
@@ -112,6 +110,7 @@ ul {
   width: 10px;
   color: #ffffff;
   transform: translateY(-50%);
+  border: #ffffff;
 }
 
 .nav-list-button {
@@ -120,6 +119,7 @@ ul {
   padding: 0.6875rem 1rem 0.59375rem;
   font-size: calc(7.7px + 0.229167vw);
   letter-spacing: 0.02em;
+  border: #ffffff;
 }
 
 /* end of nav */
@@ -135,7 +135,7 @@ section {
   z-index: 2;
 }
 .hero-image {
-  background-image: url("./hero.jpeg");
+  background-image: url("./images/hero.jpeg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -202,37 +202,6 @@ section {
 .new-arrivals-heading-flex-child {
   align-self: center;
 }
-
-/* .new-arrivals-items-flex-parent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1.5rem;
-  gap: 1rem;
-}
-
-.new-arrivals-items-flex-child {
-  flex: 1 1 200px;
-  align-self: center;
-  background-color: #38352e;
-}
-.na-item-flex-parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.na-item-flex-child {
-  align-self: center;
-  background-color: red;
-}
-
-.na-item-image {
-  width: 250px;
-} */
 
 .carousel-array-flex-parent {
   display: flex;
