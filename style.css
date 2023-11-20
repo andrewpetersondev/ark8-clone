@@ -126,7 +126,7 @@ ul {
 /* end of header */
 
 /* main */
-.section {
+section {
   width: 100vw;
   height: 100vh;
 }
@@ -189,9 +189,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 10px; */
-  /* text-align: start; */
 }
 
 .new-arrivals-heading-flex-parent {
@@ -206,7 +203,7 @@ ul {
   align-self: center;
 }
 
-.new-arrivals-items-flex-parent {
+/* .new-arrivals-items-flex-parent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -224,11 +221,8 @@ ul {
 .na-item-flex-parent {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: nowrap; */
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 1.5rem; */
-  /* height: 100%; */
 }
 
 .na-item-flex-child {
@@ -238,7 +232,86 @@ ul {
 
 .na-item-image {
   width: 250px;
+} */
+
+.carousel-array-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
 }
+
+.carousel-array-item-flex-child {
+  flex: 1;
+  /* move this chunk */
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  /* move this chunk */
+}
+
+.carousel-item-flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-item-flex-child {
+  /* background-color: red; */
+}
+
+/* .carousel-image-container {} */
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+}
+
+.dots .dot.active {
+  background-color: #333;
+}
+
 /* end of new arrivals section */
 
 /* end of main */

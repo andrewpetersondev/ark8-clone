@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex1 = 1
   let currentIndex2 = 1
   let currentIndex3 = 1
+  let currentIndex4 = 1
 
   function changeImage(direction, index) {
     const imageElement = document.getElementById(`image${index}`)
@@ -25,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
           ((currentIndex3 + direction - 1 + maxImages) % maxImages) + 1
         currentIndex3 = currentIndex
         break
+      case 4:
+        currentIndex =
+          ((currentIndex4 + direction - 1 + maxImages) % maxImages) + 1
+        currentIndex4 = currentIndex
       default:
         break
     }
