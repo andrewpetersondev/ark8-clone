@@ -41,3 +41,10 @@ The actual webpage is located at https://ark8.net/en-na
 - this is the section that users land on
 - use hero.jpeg
 - in order to create a background image that spans the whole width and container height
+
+## new arrivals
+
+Todo
+
+- [] adjust layout so that items are uniform width
+- [] adjust arrows and dots so they appear on hover
