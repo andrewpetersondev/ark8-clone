@@ -128,19 +128,27 @@ ul {
 /* main */
 section {
   width: 100vw;
-  height: 100vh;
 }
 .hero-container {
   position: relative;
   z-index: 2;
 }
 .hero-image {
-  background-image: url("./images/hero.jpeg");
+  /* background-image: url("./images/hero.jpeg"); */
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+#hero-image-1 {
+  background-image: url("./images/hell-a.webp");
+}
+#hero-image-2 {
+  background-image: url("./images/busan.webp");
+}
+#hero-image-3 {
+  background-image: url("./images/hero.jpeg");
 }
 
 .hero-flex-parent {
