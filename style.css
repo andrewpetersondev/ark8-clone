@@ -190,6 +190,7 @@ section {
   /* max-height: 100vh; */
   /* overflow: hidden; */
   padding: 2rem 1rem;
+  background-color: var(--color-lightGrey);
 }
 
 .new-arrivals-container-flex-parent {
@@ -311,5 +312,70 @@ section {
 }
 
 /* end of new arrivals section */
+
+/* explore section */
+
+.explore {
+  background-color: var(--color-lightGrey);
+}
+
+.explore-flex-container-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.explore-flex-container-child {
+  align-self: center;
+}
+
+.explore-title-text {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  font-size: 10px;
+}
+
+.explore-flex-container-links-array-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 1rem;
+}
+
+.explore-flex-container-links-array-child {
+  align-self: center;
+}
+
+.explore-link-flex-button-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-white);
+  border-radius: 5%;
+  padding: 2px 10px;
+}
+
+.explore-link-flex-button-child {
+  align-self: center;
+}
+
+.explore-link-flex-button-child-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0px;
+}
+
+/* end of explore section */
 
 /* end of main */
