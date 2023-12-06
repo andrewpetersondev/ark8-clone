@@ -400,6 +400,47 @@ section {
   padding-left: 0.5rem;
 }
 
+.intersection-observer {
+  height: 100vh;
+  background-image: url("./images/journal-entries.webp");
+}
+
+.parent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-dependent-div {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this class is set by the javascript */
+.visible {
+  visibility: visible;
+}
+
+.scroll-dependent-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding: 5px;
+}
+
 /* end of latest journal entries */
+
+.temporary {
+  background-color: var(--color-mediumGrey);
+  height: 100vh;
+}
 
 /* end of main */
