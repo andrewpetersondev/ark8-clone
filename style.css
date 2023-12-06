@@ -378,4 +378,28 @@ section {
 
 /* end of explore section */
 
+/* latest journal entries */
+.latest-journal-entries {
+  background-color: var(--color-lightGrey);
+  padding: 3rem 1rem;
+}
+
+#lje-heading {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#lje-text {
+  color: rgb(255, 176, 0);
+  padding-left: 0.5rem;
+}
+
+/* end of latest journal entries */
+
 /* end of main */
